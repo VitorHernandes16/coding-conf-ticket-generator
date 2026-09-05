@@ -1,0 +1,12 @@
+body{
+    background-image: url(./assets/images/background-desktop.png);
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 8vw;
+}
