@@ -1,0 +1,339 @@
+:root {
+  --neutro: hsl(0, 0%, 100%);
+  --neutro-300: hsl(252, 6%, 83%);
+  --neutro-500: hsl(245, 15%, 58%);
+  --neutro-700: hsl(245, 19%, 35%);
+  --neutro-900: hsl(248, 70%, 10%);
+  --Orange-500: hsl(7, 88%, 67%);
+  --Orange-700: hsl(7, 71%, 60%); 
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./assets/fonts/static/Inconsolata-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./assets/fonts/static/Inconsolata-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./assets/fonts/static/Inconsolata-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./assets/fonts/static/Inconsolata-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("./assets/images/background-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.pattern-lines {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.pattern-circle {
+    position: absolute;
+    right: 590px;
+    top: 420px;
+    width: 200px;
+    z-index: 0;
+}
+
+.pattern-top {
+    position: absolute;
+    right: -50px;
+    top: 50px;
+    width: 500px;
+    z-index: 0;
+}
+
+.pattern-bottom {
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  width: 500px;
+  z-index: 0;
+}
+
+header, main{
+  position: relative;
+  z-index: 1;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+header img{
+    width: 8vw;
+}
+
+main{
+  width: 100%;
+}
+
+#text{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#text h1 {
+    color: var(--neutro);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Inconsolata";
+    margin: 0 auto;
+}
+
+#text h1 span {
+    display: block;
+}
+
+
+#text p {
+  margin-top: 20px;
+
+  font-family: "Inconsolata";
+  color: var(--neutro-500);
+
+  font-size: 25px;
+  font-weight: 400;
+}
+
+form{
+  width: 372px;
+  margin: 38px auto 0;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label{
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inconsolata";
+  color: var(--neutro-300);
+}
+
+.input-group input{
+  width: 100%;
+  height: 44px;
+  font-family: "Inconsolata";
+  font-size: 16px;
+  color: var(--neutro-500);
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+  border: 1px solid var(--neutro-500);
+  border-radius: 8px;
+}
+
+.input-group small {
+  color: var(--neutro-300);
+  font-family: "Inconsolata";
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.input-group input:focus {
+    outline: 1px solid var(--neutro-500);
+    border-color: var(--neutro-500);
+    outline-offset: 3px;
+}
+
+
+.input-group input::placeholder {
+  color: var(--neutro-400);
+}
+
+.upload {
+  width: 100%;
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px dashed var(--neutro-500);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.upload:focus-within{
+    outline: 1px solid var(--neutro-500);
+    border-color: var(--neutro-500);
+    outline-offset: 3px;
+}
+
+
+.upload-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+.upload-icon img {
+  width: 20px;
+}
+
+
+.upload span {
+  color: var(--neutro-300);
+  font-family: "Inconsolata";
+  font-size: 15px;
+}
+
+button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  background: var(--Orange-700);
+  font-family: "Inconsolata";
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#ticket-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#text-ticket{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#text-ticket h1{
+    color: var(--neutro);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Inconsolata";
+    margin: 0 auto;
+}
+
+#text-ticket p{
+  margin-top: 20px;
+  font-family: "Inconsolata";
+  color: var(--neutro-500);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.ticket {
+  margin-top: 30px;
+  position: relative;   
+  width: 460px;         
+}
+
+.ticket-bg {
+  width: 100%;
+  display: block;       
+}
+
+.ticket-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ticket-user {
+  position: absolute;
+  left: 24px;             
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.name {
+  font-family: "Inconsolata";
+  font-weight: 700;
+  color: var(--neutro);
+  font-size: 16px;
+}
+
+.handle {
+  font-family: "Inconsolata";
+  font-size: 13px;
+  color: var(--neutro-300);
+}
+
+.ticket-number {
+  position: absolute;
+  right: 20px;           
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  writing-mode: vertical-rl;
+  font-family: "Inconsolata";
+  font-size: 12px;
+  color: var(--neutro-300);
+}
+
+.ticket-logo {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 130px;
+}
+
+.ticket-date {
+  position: absolute;
+  top: 60px;
+  left: 24px;
+  font-family: "Inconsolata";
+  font-size: 13px;
+  color: var(--neutro-300);
+}
