@@ -1,5 +1,3 @@
-
-
 :root {
   --neutro: hsl(0, 0%, 100%);
   --neutro-300: hsl(252, 6%, 83%);
@@ -7,7 +5,7 @@
   --neutro-700: hsl(245, 19%, 35%);
   --neutro-900: hsl(248, 70%, 10%);
   --Orange-500: hsl(7, 88%, 67%);
-  --Orange-700: hsl(7, 71%, 60%); 
+  --Orange-700: hsl(7, 71%, 60%);
 }
 
 @font-face {
@@ -40,38 +38,38 @@
   box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
-    background-image: url("./assets/images/background-desktop.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
+body {
+  min-height: 100vh;
+  background-image: url("./assets/images/background-desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 .pattern-lines {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100%;
-    z-index: 0;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .pattern-circle {
-    position: absolute;
-    right: 590px;
-    top: 420px;
-    width: 200px;
-    z-index: 0;
+  position: absolute;
+  right: 590px;
+  top: 420px;
+  width: 200px;
+  z-index: 0;
 }
 
 .pattern-top {
-    position: absolute;
-    right: -50px;
-    top: 50px;
-    width: 500px;
-    z-index: 0;
+  position: absolute;
+  right: -50px;
+  top: 50px;
+  width: 500px;
+  z-index: 0;
 }
 
 .pattern-bottom {
@@ -82,67 +80,65 @@ body{
   z-index: 0;
 }
 
-header, main{
+header,
+main {
   position: relative;
   z-index: 1;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-header img{
-    width: 8vw;
+header img {
+  width: 8vw;
 }
 
-main{
+main {
   width: 100%;
 }
 
-#text{
-    text-align: center;
-    margin-top: 50px;
+#text {
+  text-align: center;
+  margin-top: 50px;
 }
 
 #text h1 {
-    color: var(--neutro);
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: "Inconsolata";
-    margin: 0 auto;
+  color: var(--neutro);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Inconsolata";
+  margin: 0 auto;
 }
 
 #text h1 span {
-    display: block;
+  display: block;
 }
-
 
 #text p {
   margin-top: 20px;
-
   font-family: "Inconsolata";
   color: var(--neutro-500);
-
   font-size: 25px;
   font-weight: 400;
 }
 
-form{
+form {
   width: 372px;
   margin: 38px auto 0;
 }
 
-.input-group{
+.input-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.input-group label{
+.input-group label {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
@@ -150,7 +146,7 @@ form{
   color: var(--neutro-300);
 }
 
-.input-group input{
+.input-group input {
   width: 100%;
   height: 44px;
   font-family: "Inconsolata";
@@ -170,11 +166,10 @@ form{
 }
 
 .input-group input:focus {
-    outline: 1px solid var(--neutro-500);
-    border-color: var(--neutro-500);
-    outline-offset: 3px;
+  outline: 1px solid var(--neutro-500);
+  border-color: var(--neutro-500);
+  outline-offset: 3px;
 }
-
 
 .input-group input::placeholder {
   color: var(--neutro-400);
@@ -194,12 +189,11 @@ form{
   cursor: pointer;
 }
 
-.upload:focus-within{
-    outline: 1px solid var(--neutro-500);
-    border-color: var(--neutro-500);
-    outline-offset: 3px;
+.upload:focus-within {
+  outline: 1px solid var(--neutro-500);
+  border-color: var(--neutro-500);
+  outline-offset: 3px;
 }
-
 
 .upload-icon {
   width: 40px;
@@ -211,11 +205,9 @@ form{
   background: rgba(255, 255, 255, 0.1);
 }
 
-
 .upload-icon img {
   width: 20px;
 }
-
 
 .upload span {
   color: var(--neutro-300);
@@ -223,7 +215,7 @@ form{
   font-size: 15px;
 }
 
-button{
+button {
   width: 100%;
   height: 45px;
   border: none;
@@ -233,4 +225,135 @@ button{
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
+}
+
+#ticket-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#ticket-view[hidden] {
+  display: none;
+}
+
+#text-ticket {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#text-ticket h1 {
+  color: var(--neutro);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Inconsolata";
+  margin: 0 auto;
+}
+
+#text-ticket p {
+  margin-top: 20px;
+  font-family: "Inconsolata";
+  color: var(--neutro-500);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.ticket {
+  margin-top: 30px;
+  position: relative;
+  width: 460px;
+}
+
+.ticket-bg {
+  width: 100%;
+  display: block;
+}
+
+.ticket-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ticket-logo {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 130px;
+}
+
+.ticket-date {
+  position: absolute;
+  top: 60px;
+  left: 24px;
+  font-family: "Inconsolata";
+  font-size: 13px;
+  color: var(--neutro-300);
+}
+
+.ticket-number {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  writing-mode: vertical-rl;
+  font-family: "Inconsolata";
+  font-size: 12px;
+  color: var(--neutro-300);
+}
+
+.ticket-user {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.name {
+  font-family: "Inconsolata";
+  font-weight: 700;
+  color: var(--neutro);
+  font-size: 16px;
+}
+
+.handle {
+  font-family: "Inconsolata";
+  font-size: 13px;
+  color: var(--neutro-300);
+}
+
+.error-msg {
+  display: none;
+  color: #ff5c5c;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.input-group small.error-msg {
+  color: #ff5c5c;
+}
+
+.input-group small.error-msg img {
+  filter: invert(37%) sepia(93%) saturate(1934%) hue-rotate(335deg) brightness(101%) contrast(101%);
+}
+
+.input-group input.invalid,
+.input-group input.invalid:focus,
+.upload.invalid {
+  border-color: #ff5c5c;
+  outline-color: #ff5c5c;
 }
