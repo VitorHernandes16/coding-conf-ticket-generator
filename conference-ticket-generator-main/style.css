@@ -357,3 +357,157 @@ button {
   border-color: #ff5c5c;
   outline-color: #ff5c5c;
 }
+
+
+/* ================= TABLET (até 1024px) ================= */
+@media (max-width: 1024px) {
+  body {
+    background-image: url("./assets/images/background-tablet.png");
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .pattern-circle {
+    right: 40px;
+    top: 560px;
+    width: 140px;
+  }
+
+  .pattern-top {
+    right: -40px;
+    top: 40px;
+    width: 320px;
+  }
+
+  .pattern-bottom {
+    bottom: 20px;
+    width: 380px;
+  }
+
+  header img {
+    width: 140px;
+  }
+
+  #text h1,
+  #text-ticket h1 {
+    font-size: 44px;
+    padding: 0 24px;
+  }
+
+  #text p,
+  #text-ticket p {
+    font-size: 20px;
+    padding: 0 24px;
+  }
+
+  #ticket-view {
+    padding-bottom: 60px;
+  }
+}
+
+/* ================= CELULAR (até 600px) ================= */
+@media (max-width: 600px) {
+  body {
+    background-image: url("./assets/images/background-mobile.png");
+  }
+
+  .pattern-circle {
+    right: -30px;
+    top: 330px;
+    width: 90px;
+  }
+
+  .pattern-top {
+    right: -20px;
+    top: 20px;
+    width: 160px;
+  }
+
+  .pattern-bottom {
+    bottom: 10px;
+    width: 220px;
+  }
+
+  header {
+    margin-top: 24px;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  #text,
+  #text-ticket {
+    margin-top: 32px;
+  }
+
+  #text h1,
+  #text-ticket h1 {
+    font-size: 32px;
+    padding: 0 16px;
+  }
+
+  #text p,
+  #text-ticket p {
+    font-size: 18px;
+    margin-top: 16px;
+    padding: 0 16px;
+  }
+
+  #text-ticket p br {
+    display: none;
+  }
+
+  form {
+    width: calc(100% - 40px);
+    max-width: 372px;
+    margin-top: 28px;
+    padding-bottom: 60px;
+  }
+
+  #ticket-view {
+    margin-top: 20px;
+    padding: 0 20px 60px;
+  }
+
+  .ticket {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .ticket-logo {
+    top: 16px;
+    left: 16px;
+    width: 100px;
+  }
+
+  .ticket-date {
+    top: 46px;
+    left: 16px;
+    font-size: 11px;
+  }
+
+  .ticket-number {
+    right: 12px;
+    font-size: 10px;
+  }
+
+  .ticket-user {
+    left: 16px;
+    bottom: 16px;
+    gap: 8px;
+  }
+
+  .avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .handle {
+    font-size: 11px;
+  }
+}
